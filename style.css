@@ -1,81 +1,115 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
- 
- body {
-     font-family: Arial, sans-serif;
-     background: linear-gradient( 90deg, rgba(2, 0, 36, 1) 0%, rgba(49, 143, 123, 1) 11%, rgba(0, 212, 255, 1) 100%);
-     color: #fff;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
- }
- 
- .container {
-     width: 80%;
-     max-width: 600px;
-     background-color: rgba(255, 255, 255, 0.1);
-     border-radius: 20px;
-     overflow: hidden;
-     display: flex;
- }
- 
- .left,
- .right {
-     flex: 1;
- }
- 
- .left {
-     padding: 3rem;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
- 
- .left h1 {
-     text-align: center;
-     margin-bottom: 2rem;
-     font-size: 2.5rem;
- }
- 
- .birthday {
-     display: flex;
-     align-items: center;
-     margin-bottom: 2rem;
- }
- 
- #date {
-     font-size: 1.5rem;
-     border: none;
-     border-bottom: 2px solid #fff;
-     background-color: transparent;
-     color: #fff;
-     margin-right: 1rem;
-     padding: 5px;
-     outline: none;
- }
- 
- .btn {
-     font-size: 1.5rem;
-     border: none;
-     background-color: #111;
-     color: #fff;
-     padding: 10px 20px;
-     border-radius: 5px;
-     cursor: pointer;
-     transition: background-color 0.3s ease;
-     outline: none;
- }
- 
- .btn:hover {
-     background-color: #333;
- }
- 
- .right img {
-     width: 100%;
-     height: auto;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient( 90deg, rgba(2, 0, 36, 1) 0%, rgba(49, 143, 123, 1) 11%, rgba(0, 212, 255, 1) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+.left {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.birthday {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#date {
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 1rem;
+    padding: 5px;
+    outline: none;
+}
+
+.btn {
+    font-size: 1.5rem;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+}
+
+#toastcontainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    opacity: 1;
+}
+
+#result {
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+}
